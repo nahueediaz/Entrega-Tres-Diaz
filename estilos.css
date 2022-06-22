@@ -1,0 +1,289 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+        }*
+        /* Header de todas las paginas*/
+
+        .inicioCompl{
+            background-color: rgb(11, 11, 11);
+        }
+
+        
+        .logoInicio{
+            width: 100px;
+            height: 58px;
+            display: block;
+            position: absolute;
+            left: 30px;
+
+        }
+        .barraMenu{
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-right: 20px;
+            text-align: right;
+            margin: auto;
+        }
+        .barraMenu li a{
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            display: block;
+            
+        }
+        .barraMenu li{
+            display: inline-block;
+            text-align: right;
+        }
+        .barraMenu li a:hover{
+            background: #ef8354;
+        }
+
+        /* Seccion Index */
+        .bienvenidos{
+            min-height: 100vh;
+            background: url(./imagenes/fondo-3.jpg) no-repeat fixed;
+            background-size: cover;
+            
+            }
+        
+            .bienvenidos__titulo{
+                font-family: 'Playfair Display', serif;
+                text-transform: uppercase;
+                font-size: 60px;
+                letter-spacing: 6px;
+                text-align: center;
+                padding-top: 44px;
+                padding-bottom: 20px;
+                color: white;
+            }
+            
+            .subtitulo{
+                font-family: 'DM Sans', sans-serif;
+                font-size: 25x;
+                letter-spacing: 5px;
+                color: beige;
+                margin-left: 30px;
+                margin-bottom: 25px;
+            }
+        
+            .productoDestacado{
+                padding-bottom: 25px;
+                margin-left: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        
+
+            .productoDestacado__imagen{
+                height: 200px;
+                width: 200px;
+                margin: 27px;
+                border-radius: 12px;
+                box-shadow: 3px 15px 25px rgba(0, 0, 0, 0.90);
+            }
+
+        /*Seccion productos*/
+        .fondoPr{
+            min-height: 100vh;
+            background: url("https://scontent.fepa2-1.fna.fbcdn.net/v/t1.6435-9/119097010_1600685743452429_5478499972844125379_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=973b4a&_nc_ohc=KUmDVw9zSbwAX-48cWM&_nc_ht=scontent.fepa2-1.fna&oh=00_AT-Y9EfK3QwGatgBxoN_6R5M4NYnyX9KtKXhc6-T3JfgvQ&oe=62D0D15B") no-repeat center center fixed ;
+            background-size: cover; 
+            }
+
+        .fondoPr::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            opacity: 0.3;
+            }
+        .titTabla{
+            padding-top: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-family: 'IBM Plex Mono', monospace; 
+            font-style: italic;
+            font-size: 35px;
+            letter-spacing: 8px;
+            position: relative;
+        }
+        .titTabla--margen--20px{
+        margin-bottom: 20px;
+
+        }
+        .tablaEmpanada{
+            position: relative;
+            margin: 0 auto;
+            width: 60%;
+            border: 9px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 15px;
+        }
+        .tablaEmpanada--borde--8px{
+        border-top: inset 2px;
+        border-left: inset 2px;
+        border-color: rgba(5, 4, 4, 0.712);
+        border-radius: 5px;
+        }
+        
+        tbody tr td{
+            position: relative;
+            padding: 18px;
+            text-align: center;
+            letter-spacing: 3px;
+            color: white;
+            font-family: 'Fascinate' sans-serif;
+        }
+
+        /*Seccion nosotros*/
+
+        .acercaDe{
+            height: 90vh;
+            background: url(./imagenes/Nosostros-2.jpg) no-repeat center fixed;
+            background-size: cover;
+            position: relative;
+            overflow:auto;
+        }
+
+        .acercaDe:before{
+            content: "";
+            width: 100%;
+            height: 110%;
+            background-color: black;
+            position: absolute;
+            opacity: 0.5;
+        }
+
+        .acercaDe::-webkit-scrollbar{
+            width: 0px;
+        }
+        .acercaDe::-webkit-scrollbar-thumb{
+            color: #060505;
+            border-radius: 5px;
+        }
+        .acercaDe__titulo{
+            font-family: 'Alegreya Sans', sans-serif;
+            font-size: 50px;
+            letter-spacing: 4px;
+            color: white;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            padding-top:  20px;
+        }
+
+        .acercaDe__p1{
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            letter-spacing: 8px;
+            width: 70%;
+            padding-top: 50px;
+            margin-left: 100px;
+            text-align: justify;
+            position: relative;
+            color: antiquewhite;
+        }
+
+        .acercaDe__p2{
+            font-family: 'Libre Baskerville', serif;
+            font-size: 20px;
+            letter-spacing: 8px;
+            width: 70%;
+            padding-top: 50px;
+            margin-left: 100px;
+            text-align: justify;
+            position: relative;
+            color: antiquewhite;
+        }
+
+        /* Seccion Contacto*/
+
+        .fond{
+            background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+        }
+        .form{
+            font-family: 'Montserrat', sans-serif;
+            background-color: white;
+            margin: auto;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 16px;
+            padding: 56px 24px;
+        }
+
+        .form__input{
+            font-family: inherit;
+            font-size: 16px;
+            padding: 12px 16px;
+            outline: none;
+            border: none;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .form__container{
+            width: 100%;
+            display: grid;
+            gap: 16px;
+            grid-auto-columns: 100%;
+        }
+
+        .form__titulo{
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 7px;
+            }
+
+        .enviado{
+            font-family: inherit;
+            font-size: 16px;
+            background-color: #089FE0;
+            color: white;
+            border: none;
+            font-weight: 300;
+            padding: 11px;
+            border-radius: 3px;
+            cursor: pointer;
+
+        }
+
+        .form_input--message{
+            resize: none;
+            padding: 28px 16px;
+            margin-bottom: 8px;
+        }
+
+        /*Seccion precios*/
+        
+        .fondPrec{
+            background-color: black;;
+        }
+
+        .precios__image{
+            height: 700px;
+            width: 700px;
+            display: block;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /*Footer de todas las paginas*/
+        .footer{
+            bottom: 0;
+            background-color: black;
+        }
+        .footer__descripcion{
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            color: blanchedalmond;
+        }
